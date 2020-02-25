@@ -103,3 +103,18 @@ int main()
     return 0;
 }
 
+
+/**
+*    Bogus Nim
+*    There are n piles and many stones in each piles. Two player play this game. Each player has
+*    extra 100 stones. Each turn player can take non zero stones from any pile or add non zero stones
+*    in a pile from his/her extra stones. Finally winner is who take the last stones.
+*
+*    Once this game will be must end. Because Each player play optimally, so a player add stone when
+*    This player can't take stone from pile. So if a player add stones then other player take these
+*    new added stones.
+*
+*    That means this is exactly nim game. These 200 stones is bogus. These extra stones can't change game result
+**/
+
+
