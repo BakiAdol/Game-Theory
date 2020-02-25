@@ -26,6 +26,25 @@ int calculateGrundy(int stones)
     return dp[stones]=calculateMex(s);
 }
 
+/*
+    Player can take 1 to 3 stones, then this calculateGrundy() like
+
+    int calculateGrundy(int stones)
+    {
+        if(stones==0) return 0;
+        if(stones==1) return 1;
+        if(stones==2) return 2;
+        if(stones==3) return 3;
+        if(dp[stones]!=-1) return dp[stones];
+        set<int> s;
+        for(int i=1;i<4;i++)
+        {
+            s.insert(calculateGrundy(stones-i));
+        }
+        return dp[stones]=calculateMex(s);
+    }
+*/
+
 
 int main()
 {
